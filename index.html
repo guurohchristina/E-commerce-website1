@@ -197,7 +197,7 @@
 
     /* ========== ABOUT & CONTACT ========== */
     .about-grid{display:grid;grid-template-columns:1fr 360px;gap:26px;align-items:center;margin-top:18px}
-    .about-card{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .about-card{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02); width:10%;}
     .contact-form{display:flex;flex-direction:column;gap:10px}
     .input, textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:10px;color:var(--text);outline:none}
     textarea{min-height:120px;resize:vertical}
@@ -346,7 +346,7 @@
             <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message sent (demo).')">
               <input class="input" placeholder="Full name" required />
               <input class="input" type="email" placeholder="Email" required />
-              <textarea class="input" placeholder="Message"></textarea>
+              <textarea class="input" placeholder="Message"></textarea><br>
               <button class="btn-primary" style="align-self:flex-start">Send Message</button>
             </form>
           </div>
